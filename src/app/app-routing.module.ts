@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from 'src/dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 
 //components
 
@@ -9,7 +10,7 @@ const routes: Routes = [
   //{path:'', redirectTo:'dashboard',pathMatch:'full'},
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: HomeComponent
   },
   
   {path:'**', redirectTo:'dashboard'}
