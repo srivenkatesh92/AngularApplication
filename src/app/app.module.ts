@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import {DashboardModule} from '../dashboard/dashboard.module';
+
+import { CoreModule } from "./core/core.module";
 
 
 
@@ -16,7 +17,7 @@ import {DashboardModule} from '../dashboard/dashboard.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
