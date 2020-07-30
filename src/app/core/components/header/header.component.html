@@ -1,16 +1,10 @@
-<nav class="navbar is-dark">
-    <!-- logo -->
-    <div class="navbar-brand">
-      <a class="navbar-item">
-        <img src="assets/img/angular-logo.png">
-      </a>
-    </div>
-    <!-- menu -->
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" routerLink="">Home</a>
-        <a class="navbar-item" routerLink="contact">Contact</a>
-        <a class="navbar-item" routerLink="users">Users</a>
-      </div>
-    </div>
-  </nav>
+<mat-card>
+  <button mat-button [matMenuTriggerFor]="basicmenu">Menu</button>
+  <mat-menu #basicmenu="matMenu">    
+   <button mat-menu-item>Angular</button>
+   <button mat-menu-item>React</button>
+   <button mat-menu-item>Vue</button>
+   <button mat-menu-item>Meteor</button>
+   <button mat-menu-item>Vanilla</button>
+  </mat-menu>
+  </mat-card>
